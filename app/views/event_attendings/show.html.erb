@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Attended event:</strong>
+  <%= @event_attending.attended_event_id %>
+</p>
+
+<p>
+  <strong>Attending user:</strong>
+  <%= @event_attending.attending_user_id %>
+</p>
+
+<%= link_to 'Edit', edit_event_attending_path(@event_attending) %> |
+<%= link_to 'Back', event_attendings_path %>
